@@ -1,0 +1,30 @@
+.masthead {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 85%;
+  top: 0;
+  left: -20%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  transform: skew(-10deg);
+  border-radius: 0;
+}
+.homepage {
+  display: flex;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  z-index: 10;
+  font-size: 5em;
+  width: 100%;
+}
+.homepageHeader h1 {
+  width: 100%;
+  font-size: 1em;
+}
+.homepageText {
+  font-size: 0.25em;
+  margin-left: 3%;
+  margin-top: 3%;
+}

@@ -1,16 +1,3 @@
-.masthead {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 70%;
-  top: 0;
-  left: -20%;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 0;
-  transform: skew(-10deg);
-  border-radius: 0;
-}
-
-.foreground {
-  z-index: 10;
+* {
+  font-family: Helvetica;
 }
