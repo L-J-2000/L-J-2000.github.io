@@ -6,9 +6,11 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { RouterOutlet } from '@angular/router';
 import { appConfig } from 'src/routes';
+import { OffcanvasComponent } from './offcanvas/offcanvas.component';
+import { OffcanvasContentComponent } from './offcanvas-content/offcanvas-content.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, HomeComponent],
+  declarations: [AppComponent, NavComponent, HomeComponent, OffcanvasComponent, OffcanvasContentComponent],
   imports: [BrowserModule, NgbModule, RouterOutlet],
   providers: [appConfig.providers],
   bootstrap: [AppComponent],

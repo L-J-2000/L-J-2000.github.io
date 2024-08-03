@@ -1,21 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-
-.root-page .main-background {
-  position: fixed;
-  width: 100%;
+.masthead {
+  content: "";
+  position: absolute;
   height: 100%;
-  left: 0;
+  width: 70%;
   top: 0;
-  z-index: 10;
-  background-image: url(assets/img/bg-mobile-fallback.jpg);
-  opacity: 0.5;
+  left: -20%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  transform: skew(-10deg);
+  border-radius: 0;
 }
 
-.main-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 11;
+.foreground {
+  z-index: 10;
 }

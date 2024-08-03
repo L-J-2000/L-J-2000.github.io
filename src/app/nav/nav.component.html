@@ -1,9 +1,26 @@
-<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
-  <li [ngbNavItem]="1">
-    <button ngbNavLink>First</button>
-  </li>
-  <li [ngbNavItem]="2">
-    <button ngbNavLink>Second</button>
-  </li>
-</ul>
-<div [ngbNavOutlet]="nav"></div>
+<div
+  ngbNav
+  #nav="ngbNav"
+  [(activeId)]="active"
+  class="nav-pills"
+  orientation="vertical"
+>
+  <ng-container class="pill-container" ngbNavItem="top">
+    <button class="pill" ngbNavLink>Top</button>
+    <ng-template ngbNavContent>
+      <p>Text1</p>
+    </ng-template>
+  </ng-container>
+  <ng-container class="pill-container" ngbNavItem="middle">
+    <button ngbNavLink class="pill">Middle</button>
+    <ng-template ngbNavContent>
+      <p>Text2</p>
+    </ng-template>
+  </ng-container>
+  <ng-container class="pill-container" ngbNavItem="bottom">
+    <button ngbNavLink class="pill">Bottom</button>
+    <ng-template ngbNavContent>
+      <p>Text3</p>
+    </ng-template>
+  </ng-container>
+</div>

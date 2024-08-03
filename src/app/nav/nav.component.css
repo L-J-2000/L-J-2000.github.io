@@ -1,0 +1,9 @@
+.nav-pills {
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+
+.pill {
+  padding: 5%;
+}

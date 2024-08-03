@@ -1,0 +1,23 @@
+<div class="app-offcanvas">
+  <div data-bs-theme="dark">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Seitennavigation</h5>
+      <button
+        type="button"
+        class="btn-close text-reset"
+        aria-label="Close"
+        (click)="activeOffCanvas.dismiss('Cross click')"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <app-nav></app-nav>
+      <button
+        type="button"
+        class="btn btn-outline-dark"
+        (click)="activeOffCanvas.close('Close click')"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+</div>
