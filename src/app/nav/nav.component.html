@@ -1,0 +1,9 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <button ngbNavLink>First</button>
+  </li>
+  <li [ngbNavItem]="2">
+    <button ngbNavLink>Second</button>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
