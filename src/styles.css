@@ -1,3 +1,14 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+:root {
+  --app-main-blue: rgba(0, 38, 94, 0.9);
+  --app-navbar-blue: rgba(0, 162, 255, 0.9);
+}
 * {
   font-family: Helvetica;
+}
+h1 {
+  font-style: italic;
 }

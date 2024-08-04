@@ -1,12 +1,22 @@
-<div class="masthead"></div>
 <div class="homepage">
   <div class="homepageHeader">
     <div class="homepageHeaderbackground"></div>
-    <h1><i>Portfolio von Luca Jank</i></h1>
-    <div class="homepageText">
-      Diese Seite dient sowohl als Vorzeigeprojekt an sich als auch als
-      Portfolio für weitere Projekte.
-      <h5></h5>
-    </div>
+    <h1>Portfolio von Luca Jank</h1>
+  </div>
+  <div class="homepageText">
+    Diese Seite dient sowohl als Vorzeigeprojekt an sich als auch als Portfolio
+    für weitere Projekte.
+  </div>
+  <div class="homepageButtons">
+    <button
+      [routerLink]="['/portfolio']"
+      type="button"
+      class="btn btn-primary buttonWeitereSeiten"
+    >
+      Zum Portfolio
+    </button>
+    <button [routerLink]="['/cv']" class="btn btn-primary buttonWeitereSeiten">
+      Zum Lebenslauf
+    </button>
   </div>
 </div>

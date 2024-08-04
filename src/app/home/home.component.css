@@ -1,30 +1,28 @@
-.masthead {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 85%;
-  top: 0;
-  left: -20%;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: -1;
-  transform: skew(-10deg);
-  border-radius: 0;
-}
 .homepage {
-  display: flex;
-  position: absolute;
-  left: 20%;
-  top: 25%;
-  z-index: 10;
+  position: relative;
   font-size: 5em;
-  width: 100%;
+  width: 45%;
+  left: 15%;
+  z-index: 10;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
 }
 .homepageHeader h1 {
-  width: 100%;
   font-size: 1em;
 }
 .homepageText {
+  padding-top: 3%;
   font-size: 0.25em;
-  margin-left: 3%;
-  margin-top: 3%;
+}
+
+.buttonWeitereSeiten {
+  padding: 15px;
+  background-color: var(--app-main-blue);
+}
+
+.homepageButtons button {
+  margin-left: 5px;
 }

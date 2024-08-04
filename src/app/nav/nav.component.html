@@ -5,22 +5,40 @@
   class="nav-pills"
   orientation="vertical"
 >
-  <ng-container class="pill-container" ngbNavItem="top">
-    <button class="pill" ngbNavLink>Top</button>
+  <ng-container class="pill-container" ngbNavItem="home">
+    <button
+      [routerLink]="['/home']"
+      class="pill"
+      ngbNavLink
+      (click)="dismissCanvas('homepage')"
+    >
+      Homepage
+    </button>
     <ng-template ngbNavContent>
       <p>Text1</p>
     </ng-template>
   </ng-container>
-  <ng-container class="pill-container" ngbNavItem="middle">
-    <button ngbNavLink class="pill">Middle</button>
+  <ng-container class="pill-container" ngbNavItem="portfolio">
+    <button
+      [routerLink]="['/portfolio']"
+      ngbNavLink
+      class="pill"
+      (click)="dismissCanvas('portfolio')"
+    >
+      Portfolio
+    </button>
     <ng-template ngbNavContent>
       <p>Text2</p>
     </ng-template>
   </ng-container>
-  <ng-container class="pill-container" ngbNavItem="bottom">
-    <button ngbNavLink class="pill">Bottom</button>
-    <ng-template ngbNavContent>
-      <p>Text3</p>
-    </ng-template>
+  <ng-container class="pill-container" ngbNavItem="cv">
+    <button
+      [routerLink]="['/cv']"
+      ngbNavLink
+      class="pill"
+      (click)="dismissCanvas('cv')"
+    >
+      Lebenslauf
+    </button>
   </ng-container>
 </div>

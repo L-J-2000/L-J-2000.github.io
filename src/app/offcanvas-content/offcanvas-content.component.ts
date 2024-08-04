@@ -1,5 +1,5 @@
 import { Component, inject, Input } from '@angular/core';
-import { NgbActiveOffcanvas, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-offcanvas-content',
   templateUrl: './offcanvas-content.component.html',
