@@ -9,24 +9,20 @@ export class GlobalsService {
   private mastheadIsWidened = false;
   currentUrl?: string = '';
   routeShouldWidenMasthead(): boolean {
-    if (
-      this.router.isActive('/portfolio', {
-        paths: 'exact',
-        queryParams: 'exact',
-        fragment: 'ignored',
-        matrixParams: 'ignored',
-      }) ||
-      this.router.isActive('/cv', {
-        paths: 'exact',
-        queryParams: 'exact',
-        fragment: 'ignored',
-        matrixParams: 'ignored',
-      })
-    ) {
-      return true;
-    } else {
-      return false;
-    }
+    return this.router.isActive('/portfolio', {
+      paths: 'exact',
+      queryParams: 'exact',
+      fragment: 'ignored',
+      matrixParams: 'ignored',
+    });
+  }
+  routeShouldSmallenMasthead() {
+    return this.router.isActive('/cv', {
+      paths: 'exact',
+      queryParams: 'exact',
+      fragment: 'ignored',
+      matrixParams: 'ignored',
+    });
   }
   setMastheadIsWidened(widened: boolean) {
     this.mastheadIsWidened = widened;

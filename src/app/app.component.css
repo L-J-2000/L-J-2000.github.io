@@ -15,3 +15,7 @@
 .wide {
   width: 125%;
 }
+
+.zeroWidth {
+  width: 0%;
+}
