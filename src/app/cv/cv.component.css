@@ -9,7 +9,6 @@ html {
 
 body {
   min-height: 100%;
-  background: #eee;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #222;
@@ -20,7 +19,6 @@ body {
 
 .container {
   max-width: 700px;
-  background: #878787;
   margin: 0px auto 0px;
   box-shadow: 1px 1px 2px #dad7d7;
   border-radius: 3px;
@@ -119,7 +117,7 @@ body {
     font-style: italic;
   }
 
-  a {
+  :is(a) {
     text-decoration: none;
     color: #000;
     font-style: italic;
