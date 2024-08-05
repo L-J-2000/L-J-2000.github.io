@@ -12,3 +12,9 @@ body {
 h1 {
   font-style: italic;
 }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 75%;
+  }
+}

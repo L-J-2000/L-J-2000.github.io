@@ -1,21 +1,27 @@
-.masthead {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 85%;
-  top: 0;
-  left: -20%;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: -1;
-  transform: skew(-10deg);
-  border-radius: 0;
-  transition: width 2s;
-}
+@media (min-width: 1000px) {
+  .masthead {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 85%;
+    top: 0;
+    left: -20%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transform: skew(-10deg);
+    border-radius: 0;
+    transition: width 2s;
+  }
+  .wide {
+    width: 125%;
+  }
 
-.wide {
-  width: 125%;
+  .zeroWidth {
+    width: 0%;
+  }
 }
-
-.zeroWidth {
-  width: 0%;
+@media (max-width: 600px) {
+  .homepage {
+    font-size: 0.7em;
+  }
 }
