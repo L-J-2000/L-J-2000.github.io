@@ -2,16 +2,17 @@
   position: relative;
   font-size: 5em;
   width: 45%;
+  max-width: 45%;
   left: 15%;
   z-index: 10;
 }
 @media (min-width: 900px) {
   .homepage {
-    -webkit-transform: translateY(100%);
-    -moz-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    -o-transform: translateY(100%);
-    transform: translateY(100%);
+    -webkit-transform: translateY(30vh);
+    -moz-transform: translateY(30vh);
+    -ms-transform: translateY(30vh);
+    -o-transform: translateY(30vh);
+    transform: translateY(30vh);
   }
 }
 .homepageHeader h1 {
