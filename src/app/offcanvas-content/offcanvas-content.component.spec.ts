@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { OffcanvasContentComponent } from './offcanvas-content.component';
+import { NgbActiveOffcanvas, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavComponent } from '../nav/nav.component';
+import { RouterLink } from '@angular/router';
+import { appConfig } from 'src/routes';
 
 describe('OffcanvasContentComponent', () => {
   let component: OffcanvasContentComponent;
@@ -8,7 +11,9 @@ describe('OffcanvasContentComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [OffcanvasContentComponent]
+      declarations: [OffcanvasContentComponent, NavComponent],
+      imports: [NgbNavModule, RouterLink],
+      providers: [NgbActiveOffcanvas, appConfig.providers],
     });
     fixture = TestBed.createComponent(OffcanvasContentComponent);
     component = fixture.componentInstance;

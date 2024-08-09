@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OffcanvasComponent } from './offcanvas.component';
+import { NgbActiveOffcanvas, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 
 describe('OffcanvasComponent', () => {
   let component: OffcanvasComponent;
@@ -8,7 +9,9 @@ describe('OffcanvasComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [OffcanvasComponent]
+      declarations: [OffcanvasComponent],
+      imports: [],
+      providers: [NgbOffcanvas, NgbActiveOffcanvas],
     });
     fixture = TestBed.createComponent(OffcanvasComponent);
     component = fixture.componentInstance;

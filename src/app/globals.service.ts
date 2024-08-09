@@ -6,8 +6,6 @@ import { Router } from '@angular/router';
 })
 export class GlobalsService {
   constructor(public router: Router) {}
-  private mastheadIsWidened = false;
-  currentUrl?: string = '';
   routeShouldWidenMasthead(): boolean {
     return this.router.isActive('/portfolio', {
       paths: 'exact',
@@ -23,11 +21,5 @@ export class GlobalsService {
       fragment: 'ignored',
       matrixParams: 'ignored',
     });
-  }
-  setMastheadIsWidened(widened: boolean) {
-    this.mastheadIsWidened = widened;
-  }
-  isMastheadWidened() {
-    return this.mastheadIsWidened;
   }
 }
