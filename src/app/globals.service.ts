@@ -14,7 +14,7 @@ export class GlobalsService {
       matrixParams: 'ignored',
     });
   }
-  routeShouldSmallenMasthead() {
+  routeShouldSmallenMasthead(): boolean {
     return this.router.isActive('/cv', {
       paths: 'exact',
       queryParams: 'exact',
