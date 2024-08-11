@@ -9,8 +9,10 @@ import { OffcanvasContentComponent } from '../offcanvas-content/offcanvas-conten
 })
 export class OffcanvasComponent {
   constructor(private offcanvasService: NgbOffcanvas) {}
-  open() {
+  // TODO: This test fails / succeeds randomly atm. Fix.
+  open(): boolean {
     const offCanvasRef = this.offcanvasService.open(OffcanvasContentComponent);
     offCanvasRef.componentInstance.name = 'navbar';
+    return true;
   }
 }

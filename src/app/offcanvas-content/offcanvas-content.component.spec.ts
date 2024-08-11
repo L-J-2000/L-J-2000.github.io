@@ -11,7 +11,7 @@ describe('OffcanvasContentComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [OffcanvasContentComponent, NavComponent],
+      declarations: [],
       imports: [NgbNavModule, RouterLink],
       providers: [NgbActiveOffcanvas, appConfig.providers, NavComponent],
     });
