@@ -13,7 +13,7 @@ describe('OffcanvasContentComponent', () => {
     TestBed.configureTestingModule({
       declarations: [OffcanvasContentComponent, NavComponent],
       imports: [NgbNavModule, RouterLink],
-      providers: [NgbActiveOffcanvas, appConfig.providers],
+      providers: [NgbActiveOffcanvas, appConfig.providers, NavComponent],
     });
     fixture = TestBed.createComponent(OffcanvasContentComponent);
     component = fixture.componentInstance;

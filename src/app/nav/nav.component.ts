@@ -11,7 +11,4 @@ export class NavComponent {
   constructor(public globalsService: GlobalsService) {}
   active = 1;
   activeOffCanvas = inject(NgbActiveOffcanvas);
-  dismissCanvas(reason: string) {
-    this.activeOffCanvas.dismiss(reason);
-  }
 }

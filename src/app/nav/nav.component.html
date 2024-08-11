@@ -10,7 +10,7 @@
       [routerLink]="['/home']"
       class="pill"
       ngbNavLink
-      (click)="dismissCanvas('homepage')"
+      (click)="activeOffCanvas.dismiss('homepage')"
     >
       Homepage
     </button>
@@ -23,7 +23,7 @@
       [routerLink]="['/portfolio']"
       ngbNavLink
       class="pill"
-      (click)="dismissCanvas('portfolio')"
+      (click)="activeOffCanvas.dismiss('portfolio')"
     >
       Portfolio
     </button>
@@ -36,7 +36,7 @@
       [routerLink]="['/cv']"
       ngbNavLink
       class="pill"
-      (click)="dismissCanvas('cv')"
+      (click)="activeOffCanvas.dismiss('cv')"
     >
       Lebenslauf
     </button>

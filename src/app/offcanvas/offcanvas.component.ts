@@ -10,7 +10,7 @@ import { OffcanvasContentComponent } from '../offcanvas-content/offcanvas-conten
 export class OffcanvasComponent {
   constructor(private offcanvasService: NgbOffcanvas) {}
   open() {
-    const offcanvasRef = this.offcanvasService.open(OffcanvasContentComponent);
-    offcanvasRef.componentInstance.name = 'navbar';
+    const offCanvasRef = this.offcanvasService.open(OffcanvasContentComponent);
+    offCanvasRef.componentInstance.name = 'navbar';
   }
 }
