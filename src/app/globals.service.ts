@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class GlobalsService {
-  constructor(public router: Router) {}
+  constructor(private router: Router) {}
   routeShouldWidenMasthead(): boolean {
     return this.router.isActive('/portfolio', {
       paths: 'exact',

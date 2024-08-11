@@ -18,10 +18,11 @@ describe('GlobalsService', () => {
           { path: 'cv', component: Component },
         ]),
       ],
-      providers: [GlobalsService],
+      providers: [],
     });
-    service = TestBed.inject(GlobalsService);
+
     router = TestBed.inject(Router);
+    service = new GlobalsService(router);
     location = TestBed.inject(Location);
   });
 
@@ -38,6 +39,6 @@ describe('GlobalsService', () => {
   it('routeShouldSmallenMasthead() should return true if route is /cv', async () => {
     await router.navigate(['/cv']),
       expect(location.path()).toBe('/cv'),
-      expect(service.routeShouldSmallenMasthead).toBeTruthy();
+      expect(service.routeShouldSmallenMasthead()).toBeTruthy();
   });
 });
