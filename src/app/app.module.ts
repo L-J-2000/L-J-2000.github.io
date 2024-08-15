@@ -10,6 +10,7 @@ import { OffcanvasComponent } from './offcanvas/offcanvas.component';
 import { OffcanvasContentComponent } from './offcanvas-content/offcanvas-content.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CvComponent } from './cv/cv.component';
+import { PortfolioProjectsComponentComponent } from './portfolio-projects-component/portfolio-projects-component.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CvComponent } from './cv/cv.component';
     OffcanvasContentComponent,
     PortfolioComponent,
     CvComponent,
+    PortfolioProjectsComponentComponent,
   ],
   imports: [
     BrowserModule,
