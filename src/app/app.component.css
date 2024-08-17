@@ -12,7 +12,7 @@
   transition: width 2s;
 }
 .wide {
-  width: 1.25vw;
+  width: 125%;
 }
 
 .zeroWidth {

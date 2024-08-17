@@ -1,4 +1,10 @@
-<p>{{ projectDetails[0].id }}</p>
-<p>{{ projectDetails[0].title }}</p>
-<p>{{ projectDetails[0].description }}</p>
-<p>{{ projectDetails[0].imageURL }}</p>
+<div class="portfolioContent">
+  <section
+    class="portfolioSection"
+    *ngFor="let entry of projectDetails; index as i; first as isFirst"
+  >
+    <h1>{{ entry.title }}</h1>
+    <p>{{ entry.description }}</p>
+    <p>{{ entry.imageURL }}</p>
+  </section>
+</div>
