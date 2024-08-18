@@ -21,7 +21,10 @@ export class PortfolioComponent {
     this.indexOfNextProject = this.projectList.length;
   }
 
-  addProjectToList(projectDetailEntry: ProjectDetails) {
+  // Returns a value mainly for the purpose of testing.
+  addProjectToList(projectDetailEntry: ProjectDetails): ProjectDetails {
     this.projectList[this.indexOfNextProject] = projectDetailEntry;
+    this.indexOfNextProject++;
+    return projectDetailEntry;
   }
 }
