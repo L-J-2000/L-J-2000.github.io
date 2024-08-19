@@ -133,6 +133,7 @@ body {
   }
 
   .skills__item .right {
+    pointer-events: none;
     input {
       display: none;
     }
