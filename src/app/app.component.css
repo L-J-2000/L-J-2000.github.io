@@ -1,7 +1,7 @@
 .masthead {
   content: "";
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 85vw;
   top: 0;
   left: -20vw;
@@ -11,6 +11,16 @@
   border-radius: 0;
   transition: width 2s;
 }
+
+@media screen and (max-height: 800px) {
+  .masthead {
+    width: 0%;
+  }
+  .homepage {
+    font-size: 0.7em;
+  }
+}
+
 .wide {
   width: 125%;
 }
@@ -19,7 +29,7 @@
   width: 0%;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .homepage {
     font-size: 0.7em;
   }
